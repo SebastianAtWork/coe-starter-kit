@@ -18,6 +18,11 @@
     "diagrams": "node ./docs/diagrams.js",
     "ebook": "npm run diagrams & cd docs & coe ebook generate && pwsh -File ./build.ps1"
   },
+   "pkg": {
+    "scripts": "build/**/*.js",
+    "assets": "config/**/*",
+    "outputPath": "dist"
+  },
   "author": "Cloud Center of Excellence Toolkit",
   "license": "MIT",
   "dependencies": {
